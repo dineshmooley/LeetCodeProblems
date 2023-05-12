@@ -1,3 +1,4 @@
+//1st Approach
 class Solution {
 public:
 
@@ -14,6 +15,21 @@ public:
         numsToAns(nums, ans);
         numsToAns(nums, ans);
 
+        return ans;
+    }
+};
+
+//2nd Approach
+
+class Solution {
+public:
+    vector<int> getConcatenation(vector<int>& nums) {
+        vector<int> ans=nums;
+        int n = nums.size();
+        for(auto it: nums)  {
+            ans.push_back(it);
+        }
+        
         return ans;
     }
 };
